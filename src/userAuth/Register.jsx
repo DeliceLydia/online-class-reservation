@@ -30,7 +30,6 @@ const SignUp = (props) => {
   if (currentUser) history.replace('/signin');
   return (
     <div className="signup-container">
-      {/* <div className="login-triangle" /> */}
       <AppForm
         initialValues={{
           email: '',
