@@ -192,130 +192,25 @@
   .down-par a {
     padding-left: 5px;
   }
-  
-  /* .signup-container {
-    width: 100%;
-  }
-  
-  .signup-form {
-    font-size: 15px;
-    padding: 24px;
-  }
-  
-  .signup-h1 {
-    border-bottom: solid 1px #d1d7dc;
-    padding: 24px 64px 24px 24px;
-    line-height: 1.43;
-  }
-  
-  .signup-field input {
-    padding: 11px 45px 12px 40px;
-    font-size: 18px;
-    outline: none;
-  }
-  
-  .field-container {
-    margin: 0 auto;
-  }
-  .container {
-    position: relative;
-  }
-  
-  .button {
-    background-color: var(--prussian-blue);
-    width: 310px;
-    border-radius: 4px;
-    padding: 12px;
-    margin-top: 20px;
-    text-align: center;
-    color: #fff;
-    border: none;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-  
-  .button a {
-    color: var(--white);
-  }
-  
-  .paragraph {
-    text-align: center;
-    margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .paragraph a {
-    padding-left: 5px;
-    color: var(--prussian-blue);
-  }
-  
-  /* teachers */
-  
-  /* .teacher-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .teacher-card {
-    border: 1px solid #dcdcdc;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border-radius: 8px;
-  }
-  
-  .teachersList {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  } */
-  
-  /* .teachersList p,
-  .teachersList span {
-    font-size: 18px;
-    font-weight: bold;
-    padding-left: 10px;
-    text-transform: capitalize;
-    color: #333;
-  }
-  
-  .teachersList a:hover {
-    color: #d1d7dc;
-  } */
-  
-  /* .teacher-info {
+
+  /* login */
+
+  .login-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid #dcdcdc;
-    width: 50%;
-    margin: 0 auto 12% auto;
-    padding: 2rem 0.5rem;
+    width: 285px;
+    margin: 5% auto auto auto;
+  }
+
+  .login-h1 {
+    text-align: center;
+    margin-bottom: 5%;
   }
   
-  .information {
-    margin: 0 auto;
+  .down-signin {
+    margin-top: 5%;
   }
-  
-  .information p {
-    text-transform: capitalize;
-    font-size: 18px;
-    color: #333;
+
+  .down-signin a {
+    padding-left: 5px;
   }
-  
-  .container .title {
-    margin-top: -5%;
-  } */
-  
-  /* .teachersList .teacher-xp {
-    margin-right: 30px;
-  }
-  
-  .teachersList .view {
-    width: 150px;
-  }
-  
-  .user-nav a {
-    padding-left: 10px;
-  }
-  
-  .reserve {
-    padding-right: 10px;
-  } */

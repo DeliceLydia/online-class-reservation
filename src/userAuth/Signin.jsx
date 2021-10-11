@@ -26,34 +26,39 @@ const Signin = ({ loginUser, history, isAuthenticated }) => {
   };
   if (isAuthenticated) history.replace('/teachers');
   return (
-    <div className="login">
-      <div className="login-triangle" />
-      <h2 className="login-header">Log in</h2>
-      <form onSubmit={handleSubmit} className="login-container">
-        <input
-          type="email"
-          name="email"
-          value={email}
-          onChange={handleChange}
-          placeholder="Email"
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handleChange}
-          placeholder="password"
-          required
-        />
-        <input type="submit" value="Log in" />
+    <div className="login-container">
+      <h1 className="login-h1">Sign In</h1>
+      <form onSubmit={handleSubmit} className="login-form">
+        <div className="signup-field">
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleChange}
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div className="signup-field">
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChange}
+            placeholder="password"
+            required
+          />
+        </div>
+        <div className="signup-field">
+          <button type="submit">Sign In </button>
+        </div>
+        <div className="down-signin">
+          Do not have an account?
+          <Link to="/signup" className="">
+            Sign Up
+          </Link>
+        </div>
       </form>
-      <div className="container signin">
-        Do not have an account?
-        <Link to="/signup" className="">
-          Sign Up here
-        </Link>
-      </div>
     </div>
   );
 };
