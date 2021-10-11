@@ -15,7 +15,6 @@ export const loadTeachersAsync = () => async (dispatch) => {
         Authorization: JSON.parse(localStorage.getItem("auth_token")),
       },
     });
-    console.log(response.data);
     dispatch(loadTeachersSuccess(response.data));
   } catch (error) {
     dispatch(

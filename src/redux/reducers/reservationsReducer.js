@@ -6,7 +6,7 @@ import {
   REMOVE_TO_RESERVATIONS_FAIL,
   LOAD_RESERVATIONS_SUCCESS,
   LOAD_RESERVATIONS_FAIL,
-} from "../actions/actionTypes";
+} from '../actions/actionTypes';
 
 const initialstate = {
   loading: false,
@@ -42,7 +42,7 @@ const reservations = (state = initialstate, action) => {
       return {
         ...state,
         list: state.list.filter(
-          (reservation) => reservation.id !== action.payload.id
+          (reservation) => reservation.id !== action.payload.id,
         ),
         loading: false,
         error: null,

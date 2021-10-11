@@ -2,7 +2,7 @@ import {
   API_CALL_SUCCESS,
   LOAD_TEACHERS_SUCCESS,
   LOAD_TEACHERS_FAIL,
-} from "../actions/actionTypes";
+} from '../actions/actionTypes';
 
 const initialstate = {
   loading: false,
