@@ -12,7 +12,7 @@ const AppForm = (props) => {
       onSubmit={onSubmit}
       initialValues={initialValues}
     >
-      {() => <div className="formik-inputs-wrapper d-flex flex-center">{children}</div>}
+      {() => <div className="center">{children}</div>}
     </Formik>
   );
 };

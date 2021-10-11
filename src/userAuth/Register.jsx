@@ -29,8 +29,8 @@ const SignUp = (props) => {
 
   if (currentUser) history.replace('/signin');
   return (
-    <div className="login">
-      <div className="login-triangle" />
+    <div className="signup-container">
+      {/* <div className="login-triangle" /> */}
       <AppForm
         initialValues={{
           email: '',
@@ -40,22 +40,32 @@ const SignUp = (props) => {
         onSubmit={handleSubmit}
         validate={validationSchema}
       >
-        <form className="login-container">
-          <div className="container">
-            <h1 className="login-header">Sign up</h1>
+        <div className="signup-heading">
+          <h1 className="signup-h1">Sign up</h1>
+        </div>
+        <form className="signup-form">
+          <div className="field-container">
+            <div className="signup-field">
+              <InputForm name="name" placeholder="Name" type="name" className="form-control" />
+            </div>
+            <div className="signup-field">
+              <InputForm name="email" placeholder="Email" type="email" className="form-control" />
+            </div>
+            <div className="signup-field">
+              <InputForm name="password" placeholder="Password" type="password" className="form-control" />
+            </div>
+            <div className="signup-field">
+              <SubmitBtn title="Sign Up" />
+            </div>
           </div>
-          <InputForm name="name" placeholder="Name" type="name" />
-          <InputForm name="email" placeholder="Email" type="email" />
-          <InputForm name="password" placeholder="Password" type="password" />
-          <SubmitBtn title="SignUp" />
         </form>
+        <div className="down-par">
+          Already have an account?
+          <Link to="/signin" className="">
+            Sign in
+          </Link>
+        </div>
       </AppForm>
-      <div className="container signin">
-        Already have an account?
-        <Link to="/signin" className="">
-          Sign in here
-        </Link>
-      </div>
     </div>
   );
 };

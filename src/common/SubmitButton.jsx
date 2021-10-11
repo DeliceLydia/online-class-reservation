@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const SubmitBtn = ({ title }) => {
   const { handleSubmit } = useFormikContext();
   return (
-    <button className="btn1" type="submit" onClick={handleSubmit}>
+    <button type="submit" onClick={handleSubmit}>
       {title}
     </button>
   );
