@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import AppForm from '../common/AppForm';
 import { registerUserAsync } from '../redux/thunk/authThunk';
-import PropTypes from 'prop-types';
 import validationSchema from '../components/validation/userValidation';
 import SubmitBtn from '../common/SubmitButton';
 import InputForm from '../common/InputForm';
