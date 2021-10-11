@@ -4,8 +4,10 @@ import Signin from './userAuth/Signin';
 import Register from './userAuth/Register';
 import Home from './containers/Home';
 import Navbar from './containers/Navbar';
+import Reservation from './containers/ReservationsList';
+import HomeTeacher from './containers/Teacher';
+import TeachersDetails from './containers/TeachersDetails';
 import Footer from './containers/Footer';
-// import Teacher from './components/Teacher';
 // import Logout from './containers/Logout';
 
 const App = () => (
@@ -15,7 +17,9 @@ const App = () => (
       <Switch>
         <Route path="/signup" component={Register} />
         <Route path="/signin" component={Signin} />
-        {/* <Route path="/teachers" component={Teacher} /> */}
+        <Route path="/reservations" component={Reservation} />
+        <Route path="/teachers" component={HomeTeacher} />
+        <Route path="/teachers/:id" component={TeachersDetails} />
         {/* <Route path="/logout" component={Logout} /> */}
         <Route path="/" component={Home} />
       </Switch>
