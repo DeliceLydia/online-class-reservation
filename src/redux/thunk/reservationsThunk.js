@@ -11,13 +11,13 @@ import {
 } from '../actions/actionCreators';
 
 const api = 'http://localhost:3000/api/v1';
-const authToken = JSON.parse(localStorage.getItem('auth_token'));
+const authToken = JSON.parse(localStorage.getItem('authToken'));
 axios.defaults.headers.common.Authorization = authToken;
 
 export const addToReservationsAsync = (teacher) => async (dispatch) => {
   dispatch(apiCallStart());
   try {
-    const authToken = JSON.parse(localStorage.getItem('auth_token'));
+    const authToken = JSON.parse(localStorage.getItem('authToken'));
     axios.defaults.headers.common.Authorization = authToken;
     const { user_id: userId } = jwtDecode(authToken);
     const response = await axios.post(`${api}/reservations/`, {
@@ -41,7 +41,7 @@ export const addToReservationsAsync = (teacher) => async (dispatch) => {
 export const removeToResevationsAsync = (reservationId) => async (dispatch) => {
   dispatch(apiCallStart());
   try {
-    const authToken = JSON.parse(localStorage.getItem('auth_token'));
+    const authToken = JSON.parse(localStorage.getItem('authToken'));
     const response = await axios.delete(
       `${api}/reservations/${reservationId}`,
       {
@@ -67,7 +67,7 @@ export const removeToResevationsAsync = (reservationId) => async (dispatch) => {
 export const loadReservationsAsync = () => async (dispatch) => {
   dispatch(apiCallStart());
   try {
-    const authToken = JSON.parse(localStorage.getItem('auth_token'));
+    const authToken = JSON.parse(localStorage.getItem('authToken'));
     const { user_id: userId } = jwtDecode(authToken);
     const response = await axios.get(`${api}/reservations/${userId}`, {
       headers: {

@@ -6,27 +6,28 @@ import { loginUserSuccess } from '../redux/actions/actionCreators';
 import { loadTeachersAsync } from '../redux/thunk/teachersThunk';
 import Teacher from '../components/teacher';
 
-const HomeTeacher =
-  ({ history, loginUser, loadTeachers, teachers }) => {
-    useEffect(() => {
-      const authToken = localStorage.getItem('auth_token');
-      if (!authToken) history.replace('/signin');
-      if (authToken) {
-        const user = jwtDecode(JSON.parse(authToken));
-        loginUser(user);
-      }
-      loadTeachers();
-    }, []);
-    return (
-      <section>
-        <>
-          {teachers.map((teacher) => {
-            return <Teacher teacher={teacher} key={teacher.id} />;
-          })}
-        </>
-      </section>
-    );
-  };
+const HomeTeacher = ({
+  history, loginUser, loadTeachers, teachers,
+}) => {
+  useEffect(() => {
+    const authToken = localStorage.getItem('authToken');
+    if (!authToken) history.replace('/signin');
+    if (authToken) {
+      const user = jwtDecode(JSON.parse(authToken));
+      loginUser(user);
+    }
+    loadTeachers();
+  }, []);
+  return (
+    <section>
+      <>
+        {teachers.map((teacher) => (
+          <Teacher teacher={teacher} key={teacher.id} />
+        ))}
+      </>
+    </section>
+  );
+};
 
 HomeTeacher.propTypes = {
   loginUser: PropTypes.func.isRequired,

@@ -12,14 +12,14 @@ export const loadTeachersAsync = () => async (dispatch) => {
   try {
     const response = await axios.get(`${api}/teachers`, {
       headers: {
-        Authorization: JSON.parse(localStorage.getItem('auth_token')),
+        Authorization: JSON.parse(localStorage.getItem('authToken')),
       },
     });
     dispatch(loadTeachersSuccess(response.data));
   } catch (error) {
     dispatch(
       loadTeachersFail(
-        error.response ? error.response.data.errors[0] : 'Something went wrong',
+        error.response ? error.response.data.errors : 'Something went wrong',
       ),
     );
   }

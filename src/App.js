@@ -8,7 +8,7 @@ import Reservation from './containers/ReservationsList';
 import HomeTeacher from './containers/Teacher';
 import TeachersDetails from './containers/TeachersDetails';
 import Footer from './containers/Footer';
-// import Logout from './containers/Logout';
+import Logout from './containers/Logout';
 
 const App = () => (
   <BrowserRouter>
@@ -20,7 +20,7 @@ const App = () => (
         <Route path="/reservations" component={Reservation} />
         <Route path="/teachers" component={HomeTeacher} />
         <Route path="/teachers/:id" component={TeachersDetails} />
-        {/* <Route path="/logout" component={Logout} /> */}
+        <Route path="/logout" component={Logout} />
         <Route path="/" component={Home} />
       </Switch>
     </main>

@@ -8,7 +8,7 @@ const Reservation = ({
   history, loadReservations, teachers,
 }) => {
   useEffect(() => {
-    const authToken = localStorage.getItem('auth_token');
+    const authToken = localStorage.getItem('authToken');
     if (!authToken) history.replace('/signin');
     loadReservations();
   }, []);

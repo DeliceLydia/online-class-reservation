@@ -7,7 +7,7 @@ import { loginUserAsync } from '../redux/thunk/authThunk';
 const Signin = ({ loginUser, history, isAuthenticated }) => {
   useEffect(() => {
     if (isAuthenticated) history.replace('/teachers');
-    const token = localStorage.getItem('auth_token');
+    const token = localStorage.getItem('authToken');
     return token ? history.replace('/signin') : '';
   }, []);
   const [email, setEmail] = useState('');
