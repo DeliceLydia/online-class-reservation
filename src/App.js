@@ -18,9 +18,9 @@ const App = () => (
         <Route path="/signup" component={Register} />
         <Route path="/signin" component={Signin} />
         <Route path="/reservations" component={Reservation} />
-        <Route path="/teachers" component={HomeTeacher} />
-        <Route path="/teachers/:id" component={TeachersDetails} />
         <Route path="/logout" component={Logout} />
+        <Route exact path="/teachers" component={HomeTeacher} />
+        <Route path="/teachers/:id" component={TeachersDetails} />
         <Route path="/" component={Home} />
       </Switch>
     </main>

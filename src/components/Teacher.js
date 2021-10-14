@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import {
   loadReservationsAsync,
   addToReservationsAsync,
-  removeToResevationsAsync,
+  removeToReservationsAsync,
 } from '../redux/thunk/reservationsThunk';
 
 const Teacher = ({
@@ -20,10 +20,9 @@ const Teacher = ({
   return (
     <>
       {teacher && (
-        <div className="pm sc-iwsKbI hRZzmY" key={teacher.id}>
-          <div className="border-line" />
+        <div className="card-container" key={teacher.id}>
           <div className="blocks-container">
-            <Card style={{ width: '38rem' }}>
+            <Card>
               <Link to={`/teachers/${teacher.id}`}>
                 <Card.Title className="title">{teacher.name}</Card.Title>
               </Link>
@@ -80,7 +79,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
   addToReservations: (teacher) => addToReservationsAsync(teacher),
-  removeToReservations: (reservationsId) => removeToResevationsAsync(reservationsId),
+  removeToReservations: (reservationsId) => removeToReservationsAsync(reservationsId),
   loadReservations: () => loadReservationsAsync(),
 };
 

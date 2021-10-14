@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import jwtDecode from 'jwt-decode';
 import { loginUserSuccess } from '../redux/actions/actionCreators';
 import { loadTeachersAsync } from '../redux/thunk/teachersThunk';
-import Teacher from '../components/teacher';
+import Teacher from '../components/Teacher';
 
 const TeachersDetails = ({
   teachers, loadTeachers, match, history, loginUser,
@@ -13,10 +13,10 @@ const TeachersDetails = ({
   useEffect(() => {
     const { params } = match;
     const { id } = params;
-    const authToken = localStorage.getItem('authToken');
-    if (!authToken) history.replace('/signin');
-    if (authToken) {
-      const user = jwtDecode(JSON.parse(authToken));
+    const token = localStorage.getItem('authToken');
+    if (!token) history.replace('/signin');
+    if (token) {
+      const user = jwtDecode(JSON.parse(token));
       loginUser(user);
     }
     loadTeachers();

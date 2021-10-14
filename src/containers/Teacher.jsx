@@ -4,7 +4,7 @@ import jwtDecode from 'jwt-decode';
 import PropTypes from 'prop-types';
 import { loginUserSuccess } from '../redux/actions/actionCreators';
 import { loadTeachersAsync } from '../redux/thunk/teachersThunk';
-import Teacher from '../components/teacher';
+import Teacher from '../components/Teacher';
 
 const HomeTeacher = ({
   history, loginUser, loadTeachers, teachers,
@@ -19,7 +19,7 @@ const HomeTeacher = ({
     loadTeachers();
   }, []);
   return (
-    <section>
+    <section className="card-section">
       <>
         {teachers.map((teacher) => (
           <Teacher teacher={teacher} key={teacher.id} />

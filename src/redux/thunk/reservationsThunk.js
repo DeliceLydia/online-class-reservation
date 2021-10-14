@@ -38,7 +38,7 @@ export const addToReservationsAsync = (teacher) => async (dispatch) => {
   }
 };
 
-export const removeToResevationsAsync = (reservationId) => async (dispatch) => {
+export const removeToReservationsAsync = (reservationId) => async (dispatch) => {
   dispatch(apiCallStart());
   try {
     const authToken = JSON.parse(localStorage.getItem('authToken'));

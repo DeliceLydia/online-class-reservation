@@ -215,3 +215,31 @@
   .down-signin a {
     padding-left: 5px;
   }
+
+  .card-container {
+    margin-top: 5%;
+    margin-bottom: 5px;
+    border: 1px solid #dcdcdc;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 35rem;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  .title {
+    text-transform: capitalize;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px 24px;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: var(--prussian-blue);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
