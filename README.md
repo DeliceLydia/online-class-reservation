@@ -2,7 +2,10 @@
 This is a frontend of online class reservation app, with this application you are able to 
 make reservations of a course with one or more teachers.
 
+### Homepage
 ![screenshot](./shot.png)
+
+### Teachers List
 ![screenshot](./shot1.png)
 
 ## Backend Link
