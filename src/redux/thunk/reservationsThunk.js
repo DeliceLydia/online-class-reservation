@@ -50,7 +50,7 @@ export const removeToReservationsAsync = (reservationId) => async (dispatch) => 
         },
       },
     );
-    dispatch(removeToReservationsSuccess(response.data.data));
+    dispatch(removeToReservationsSuccess(response.data));
     toast.success('Remove To Reservations succesffuly');
   } catch (error) {
     dispatch(
@@ -74,7 +74,7 @@ export const loadReservationsAsync = () => async (dispatch) => {
         Authorization: authToken,
       },
     });
-    dispatch(loadReservationsSuccess(response.data.data));
+    dispatch(loadReservationsSuccess(response.data));
   } catch (error) {
     dispatch(
       loadReservationsFail(

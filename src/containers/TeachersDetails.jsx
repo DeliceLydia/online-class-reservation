@@ -5,6 +5,7 @@ import jwtDecode from 'jwt-decode';
 import { loginUserSuccess } from '../redux/actions/actionCreators';
 import { loadTeachersAsync } from '../redux/thunk/teachersThunk';
 import Teacher from '../components/Teacher';
+import Navbar from './Navbar1';
 
 const TeachersDetails = ({
   teachers, loadTeachers, match, history, loginUser,
@@ -25,8 +26,10 @@ const TeachersDetails = ({
     setTeacher(findTeacher);
   }, []);
   return (
-
-    <>{teacher && <Teacher teacher={teacher} />}</>
+    <>
+      <Navbar />
+      {teacher && <Teacher teacher={teacher} />}
+    </>
   );
 };
 

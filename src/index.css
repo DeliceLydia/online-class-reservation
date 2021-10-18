@@ -28,6 +28,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
   }
   
   a {
@@ -42,6 +43,10 @@
   main {
     width: 100%;
     object-fit: cover;
+  }
+
+  .homepage {
+    width: 100%;
   }
   
   nav {
@@ -65,11 +70,7 @@
   }
   
   .nav-right {
-    padding-right: 30px;
-  }
-  
-  .nav-left {
-    padding-left: 30px;
+    margin: 20px auto;
   }
   
   .login {
@@ -86,17 +87,19 @@
   img {
     width: 100%;
     height: 25rem;
+    margin-top: 15%;
   }
   
   .intro {
     position: absolute;
-    width: 400px;
-    top: 15%;
+    width: 70%;
+    top: 28%;
     left: 10%;
     background-color: var(--white);
-    padding: 2.4rem;
+    padding: 1rem;
     box-shadow: 2px 4px rgb(0 0 0 / 8%);
     border-radius: 4px;
+    margin: 0 auto;
   }
   
   .intro-p {
@@ -108,6 +111,8 @@
     justify-content: center;
     align-items: center;
     height: 50vh;
+    margin-top: 18%;
+    width: 100%;
   }
   
   .center {
@@ -115,8 +120,7 @@
   }
   
   .text-info {
-    width: 400px;
-    text-align: center;
+    padding-top: 40px;
   }
   
   .text-center {
@@ -124,9 +128,8 @@
   }
   
   .image-info {
-    width: 350px;
+    width: 100%;
     height: 250px;
-    margin-right: 50px;
   }
   
   .image-info img {
@@ -142,7 +145,7 @@
     font-size: 0.875rem;
     font-weight: 400;
     font-family: 'Roboto', serif;
-    margin-top: 14%;
+    margin-top: 35%;
   }
   
   /* signup */
@@ -217,14 +220,13 @@
   }
 
   .card-container {
-    margin-top: 5%;
+    margin-top: 25%;
     margin-bottom: 5px;
     border: 1px solid #dcdcdc;
-    padding: 1rem;
+    padding: 1rem 0;
     border-radius: 8px;
-    width: 35rem;
+    width: 100%;
     text-align: center;
-    margin-left: 50px;
   }
 
   .title {
@@ -232,7 +234,7 @@
   }
 
   .button {
-    width: 100%;
+    width: 50%;
     padding: 10px 24px;
     font-size: 14px;
     outline: none;
@@ -242,4 +244,58 @@
     color: #fff;
     border: none;
     border-radius: 4px;
+  }
+  @media(min-width: 768px) {
+    .flex {
+      flex-direction: row;
+    }
+
+    nav {
+      padding-bottom: 10px;
+    }
+
+    .nav-right {
+      margin: 20px 20px;
+    }
+
+    .nav-left {
+      margin-left: 20px;
+    }
+
+    img {
+      margin-top: 0;
+    }
+
+    .intro {
+      top: 22%;
+    }
+
+    .down-info {
+      margin-top: -8%;
+    }
+
+    .text-info {
+      padding-top: 0;
+    }
+
+    .footer {
+      margin-top: 2%;
+    }
+
+    form {
+      margin-top: -10%;
+      margin-bottom: 10%;
+    }
+
+    .login-h1 {
+      margin-bottom: 10%;
+    }
+
+    .login-container {
+      margin-left: 35%;
+    }
+
+    .card-container {
+      margin-top: 10%;
+    }
   }

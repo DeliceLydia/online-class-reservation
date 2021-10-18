@@ -1,9 +1,10 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import Signin from './userAuth/Signin';
 import Register from './userAuth/Register';
 import Home from './containers/Home';
-import Navbar from './containers/Navbar';
 import Reservation from './containers/ReservationsList';
 import HomeTeacher from './containers/Teacher';
 import TeachersDetails from './containers/TeachersDetails';
@@ -12,16 +13,16 @@ import Logout from './containers/Logout';
 
 const App = () => (
   <BrowserRouter>
-    <Navbar />
     <main>
+      <ToastContainer className="toast-container-custom" />
       <Switch>
-        <Route path="/signup" component={Register} />
-        <Route path="/signin" component={Signin} />
-        <Route path="/reservations" component={Reservation} />
-        <Route path="/logout" component={Logout} />
+        <Route exact path="/signin" component={Signin} />
+        <Route exact path="/signup" component={Register} />
+        <Route exact path="/reservations" component={Reservation} />
+        <Route exact path="/logout" component={Logout} />
         <Route exact path="/teachers" component={HomeTeacher} />
-        <Route path="/teachers/:id" component={TeachersDetails} />
-        <Route path="/" component={Home} />
+        <Route exact path="/teachers/:id" component={TeachersDetails} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </main>
     <Footer />

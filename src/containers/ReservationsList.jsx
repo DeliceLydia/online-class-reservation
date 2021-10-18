@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { loadReservationsAsync } from '../redux/thunk/reservationsThunk';
 import Teacher from '../components/Teacher';
+import Navbar from './Navbar1';
 
 const Reservation = ({
   history, loadReservations, teachers,
@@ -14,6 +15,7 @@ const Reservation = ({
   }, []);
   return (
     <>
+      <Navbar />
       {teachers.length > 0 ? (
         <div>
           {teachers.map((teacher) => (
