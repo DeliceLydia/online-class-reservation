@@ -10,7 +10,7 @@ import {
   addToReservationsSuccess,
 } from '../actions/actionCreators';
 
-const api = 'http://localhost:3000/api/v1';
+const api = 'https://lydia-online-class.herokuapp.com/api/v1';
 const authToken = JSON.parse(localStorage.getItem('authToken'));
 axios.defaults.headers.common.Authorization = authToken;
 

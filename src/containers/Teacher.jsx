@@ -6,6 +6,7 @@ import { loginUserSuccess } from '../redux/actions/actionCreators';
 import { loadTeachersAsync } from '../redux/thunk/teachersThunk';
 import Teacher from '../components/Teacher';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const HomeTeacher = ({
   history, loginUser, loadTeachers, teachers,
@@ -26,6 +27,7 @@ const HomeTeacher = ({
         {teachers.map((teacher) => (
           <Teacher teacher={teacher} key={teacher.id} />
         ))}
+        <Footer />
       </>
     </section>
   );

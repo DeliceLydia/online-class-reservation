@@ -37,7 +37,7 @@
   }
   
   a:hover {
-    color: var(--pupple);
+    color: rgb(26, 21, 21);
   }
   
   main {
@@ -122,6 +122,10 @@
   .text-info {
     padding-top: 40px;
   }
+
+  .text-info p {
+    margin-bottom: 10%;
+  }
   
   .text-center {
     margin-bottom: 10%;
@@ -145,7 +149,7 @@
     font-size: 0.875rem;
     font-weight: 400;
     font-family: 'Roboto', serif;
-    margin-top: 35%;
+    margin-top: 40%;
   }
   
   /* signup */
@@ -301,5 +305,17 @@
 
     .card-container {
       margin-top: 10%;
+    }
+  }
+
+  @media(min-width: 1024px) {
+    .down-info {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .image-info {
+      width: 80%;
+      margin-right: 20px;
     }
   }

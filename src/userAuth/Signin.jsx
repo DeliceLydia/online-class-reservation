@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { loginUserAsync } from '../redux/thunk/authThunk';
+import Navbar from '../containers/Navbar3';
 
 const Signin = ({ loginUser, history, isAuthenticated }) => {
   useEffect(() => {
@@ -26,40 +27,43 @@ const Signin = ({ loginUser, history, isAuthenticated }) => {
   };
   if (isAuthenticated) history.replace('/teachers');
   return (
-    <div className="login-container">
-      <h1 className="login-h1">Sign In</h1>
-      <form onSubmit={handleSubmit} className="login-form">
-        <div className="signup-field">
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={handleChange}
-            placeholder="Email"
-            required
-          />
-        </div>
-        <div className="signup-field">
-          <input
-            type="password"
-            name="password"
-            value={password}
-            onChange={handleChange}
-            placeholder="password"
-            required
-          />
-        </div>
-        <div className="signup-field">
-          <button type="submit">Sign In </button>
-        </div>
-        <div className="down-signin">
-          Do not have an account?
-          <Link to="/signup" className="">
-            Sign Up
-          </Link>
-        </div>
-      </form>
-    </div>
+    <>
+      <Navbar />
+      <div className="login-container">
+        <h1 className="login-h1">Sign In</h1>
+        <form onSubmit={handleSubmit} className="login-form">
+          <div className="signup-field">
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={handleChange}
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div className="signup-field">
+            <input
+              type="password"
+              name="password"
+              value={password}
+              onChange={handleChange}
+              placeholder="password"
+              required
+            />
+          </div>
+          <div className="signup-field">
+            <button type="submit">Sign In </button>
+          </div>
+          <div className="down-signin">
+            Do not have an account?
+            <Link to="/signup" className="">
+              Sign Up
+            </Link>
+          </div>
+        </form>
+      </div>
+    </>
   );
 };
 

@@ -8,7 +8,6 @@ import Home from './containers/Home';
 import Reservation from './containers/ReservationsList';
 import HomeTeacher from './containers/Teacher';
 import TeachersDetails from './containers/TeachersDetails';
-import Footer from './containers/Footer';
 import Logout from './containers/Logout';
 
 const App = () => (
@@ -25,7 +24,6 @@ const App = () => (
         <Route exact path="/" component={Home} />
       </Switch>
     </main>
-    <Footer />
   </BrowserRouter>
 );
 
