@@ -8,9 +8,6 @@ const Navbar = () => (
           <span className="logo">0nlineCourses</span>
         </Link>
       </div>
-      <div className="nav-right align">
-        <Link className="nav signup" to="/">Home</Link>
-      </div>
     </div>
   </nav>
 );
