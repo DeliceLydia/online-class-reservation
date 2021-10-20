@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="homepage"
+  >
+    <nav
+      className=""
+    >
+      <div
+        className="flex navbar align"
+      >
+        <div
+          className="nav-left"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <span
+              className="logo"
+            >
+              0nlineCourses
+            </span>
+          </a>
+        </div>
+        <div
+          className="nav-right align"
+        >
+          <a
+            className="nav login"
+            href="/signin"
+            onClick={[Function]}
+          >
+            Sign In
+          </a>
+          <a
+            className="nav signup"
+            href="/signup"
+            onClick={[Function]}
+          >
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </nav>
+    <img
+      alt="homepage"
+      src="online.jpeg"
+    />
+    <div
+      className="intro"
+    >
+      <h1
+        className="intro-h"
+      >
+        We Lead In Flexible Learning
+      </h1>
+      <p
+        className="intro-p"
+      >
+        With online courses app you can study whenever and wherever you choose. We have students all over the world, and a global reputation as a pioneer in the field of flexible learning.
+      </p>
+    </div>
+    <div
+      className="down-info flex"
+    >
+      <div
+        className="image-info"
+      >
+        <img
+          alt="cartoon"
+          src="cart.png"
+        />
+      </div>
+      <div
+        className="text-info center"
+      >
+        <h2
+          className="info-head"
+        >
+          Transform your lives through online education
+        </h2>
+        <p>
+          Learners around the world are launching new careers, advancing in their fields, and enriching their lives.
+        </p>
+        <a
+          className="nav signup"
+          href="/signup"
+          onClick={[Function]}
+        >
+          Get started
+        </a>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="footer"
+  >
+    <p>
+      Online courses © 2021, Designed by Lydia Ingabire
+    </p>
+  </div>,
+]
+`;
