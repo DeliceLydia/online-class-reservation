@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reservations should render correctly 1`] = `
+Array [
+  <nav
+    className=""
+  >
+    <div
+      className="flex navbar align"
+    >
+      <div
+        className="nav-left"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <span
+            className="logo"
+          >
+            0nlineCourses
+          </span>
+        </a>
+      </div>
+      <div
+        className="nav-right align"
+      >
+        <a
+          className="nav login"
+          href="/teachers"
+          onClick={[Function]}
+        >
+          Teachers
+        </a>
+        <a
+          className="nav signup"
+          href="/logout"
+          onClick={[Function]}
+        >
+          Logout
+        </a>
+      </div>
+    </div>
+  </nav>,
+  "List is empty",
+]
+`;
