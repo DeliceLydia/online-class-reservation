@@ -17,7 +17,7 @@ describe('Reservations', () => {
               component={(props) => <Reservation history={props.history} />}
             />
           </Provider>
-        </BrowserRouter>
+        </BrowserRouter>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
