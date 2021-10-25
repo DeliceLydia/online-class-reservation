@@ -43,5 +43,12 @@ Array [
     </div>
   </nav>,
   "List is empty",
+  <div
+    className="footer"
+  >
+    <p>
+      Online courses © 2021, Designed by Lydia Ingabire
+    </p>
+  </div>,
 ]
 `;

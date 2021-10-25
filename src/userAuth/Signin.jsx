@@ -9,7 +9,7 @@ const Signin = ({ loginUser, history, isAuthenticated }) => {
   useEffect(() => {
     if (isAuthenticated) history.replace('/teachers');
     const token = localStorage.getItem('authToken');
-    return token ? history.replace('/signin') : '';
+    return token ? history.replace('/') : '';
   }, []);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
