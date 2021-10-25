@@ -6,8 +6,8 @@
   --medium-blue: #307bbe;
   --dodger-blue: #379cf6;
   --warm-grey: #888;
-  --pupple: #631399;
-  --prussian-blue: #a435f0;
+  --green: #59981A;
+  --lime-green: #81B622;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -34,6 +34,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--green);
 }
 
 a:hover {
@@ -80,7 +81,7 @@ nav {
 }
 
 .signup {
-  background-color: var(--prussian-blue);
+  background-color: var(--lime-green);
   color: var(--white);
 }
 
@@ -184,14 +185,14 @@ img {
   outline: none;
   margin-bottom: 10px;
   display: inline-block;
-  background-color: var(--prussian-blue);
+  background-color: var(--lime-green);
   color: #fff;
   border: none;
   border-radius: 4px;
 }
 
 .signup-field button:hover {
-  background-color: var(--pupple);
+  background-color: var(--green);
 }
 
 .signup-form {
@@ -246,7 +247,7 @@ img {
   outline: none;
   margin-bottom: 10px;
   display: inline-block;
-  background-color: var(--prussian-blue);
+  background-color: var(--lime-green);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -271,6 +272,10 @@ img {
 
   img {
     margin-top: 0;
+  }
+
+  .teacherimg {
+    width: 80%;
   }
 
   .intro {
@@ -316,5 +321,15 @@ img {
   .image-info {
     width: 80%;
     margin-right: 20px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-body {
+    width: 50%;
+    padding-top: 10%;
   }
 }

@@ -13,7 +13,7 @@ const HomeTeacher = ({
 }) => {
   useEffect(() => {
     const authToken = localStorage.getItem('authToken');
-    if (!authToken) history.replace('/signin');
+    if (!authToken) history.replace('/');
     if (authToken) {
       const user = jwtDecode(JSON.parse(authToken));
       loginUser(user);

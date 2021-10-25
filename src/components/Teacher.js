@@ -24,9 +24,10 @@ const Teacher = ({
           <div className="blocks-container">
             <Card>
               <Link to={`/teachers/${teacher.id}`}>
-                <Card.Title className="title">{teacher.name}</Card.Title>
+                <Card.Img className="teacherimg" variant="top" src={teacher.image} />
               </Link>
               <Card.Body>
+                <Card.Title className="title">{teacher.name}</Card.Title>
                 <Card.Text className="course">
                   <span>
                     Courses:
@@ -38,6 +39,7 @@ const Teacher = ({
                     Experience:
                     {teacher.experience}
                   </span>
+                  <p>Price:10$/hour</p>
                 </Card.Text>
                 {res ? (
                   <Button

@@ -4,13 +4,14 @@ import PropTypes from 'prop-types';
 import { loadReservationsAsync } from '../redux/thunk/reservationsThunk';
 import Teacher from '../components/Teacher';
 import Navbar from './Navbar1';
+import Footer from './Footer';
 
 const Reservation = ({
   history, loadReservations, teachers,
 }) => {
   useEffect(() => {
     const authToken = localStorage.getItem('authToken');
-    if (!authToken) history.replace('/signin');
+    if (!authToken) history.replace('/');
     loadReservations();
   }, []);
   return (
@@ -25,6 +26,7 @@ const Reservation = ({
       ) : (
         'List is empty'
       )}
+      <Footer />
     </>
   );
 };

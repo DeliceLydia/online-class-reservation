@@ -15,7 +15,7 @@ const SignUp = (props) => {
     const token = localStorage.getItem('authToken');
     const { currentUser, history } = props;
     if (token) history.replace('/');
-    return currentUser ? history.replace('/signin') : '';
+    return currentUser ? history.replace('/') : '';
   }, []);
   const handleSubmit = (values) => {
     const { signupUser } = props;
@@ -28,7 +28,7 @@ const SignUp = (props) => {
     signupUser(user);
   };
 
-  if (currentUser) history.replace('/signin');
+  if (currentUser) history.replace('/');
   return (
     <>
       <Navbar />
@@ -63,7 +63,7 @@ const SignUp = (props) => {
           </form>
           <div className="down-par">
             Already have an account?
-            <Link to="/signin" className="">
+            <Link to="/" className="">
               Sign in
             </Link>
           </div>

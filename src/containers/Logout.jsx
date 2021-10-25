@@ -6,7 +6,7 @@ import { logoutUser } from '../redux/thunk/authThunk';
 const Logout = ({ logoutUser, history }) => {
   useEffect(() => {
     logoutUser();
-    history.replace('/signin');
+    history.replace('/');
   }, []);
   return <h1>Logging out...</h1>;
 };

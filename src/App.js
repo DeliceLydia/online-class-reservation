@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import Signin from './userAuth/Signin';
 import Register from './userAuth/Register';
-import Home from './containers/Home';
 import Reservation from './containers/ReservationsList';
 import HomeTeacher from './containers/Teacher';
 import TeachersDetails from './containers/TeachersDetails';
@@ -15,13 +14,12 @@ const App = () => (
     <main>
       <ToastContainer className="toast-container-custom" />
       <Switch>
-        <Route exact path="/signin" component={Signin} />
+        <Route exact path="/" component={Signin} />
         <Route exact path="/signup" component={Register} />
         <Route exact path="/reservations" component={Reservation} />
         <Route exact path="/logout" component={Logout} />
         <Route exact path="/teachers" component={HomeTeacher} />
         <Route exact path="/teachers/:id" component={TeachersDetails} />
-        <Route exact path="/" component={Home} />
       </Switch>
     </main>
   </BrowserRouter>
