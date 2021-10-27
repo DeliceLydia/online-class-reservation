@@ -12,7 +12,7 @@ const validationSchema = (values) => {
   }
 
   if (name.trim() === '') {
-    errors.firstname = 'name is required';
+    errors.name = 'name is required';
   }
 
   if (password.length < 6) {

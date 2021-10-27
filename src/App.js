@@ -14,12 +14,12 @@ const App = () => (
     <main>
       <ToastContainer className="toast-container-custom" />
       <Switch>
-        <Route exact path="/" component={Signin} />
         <Route exact path="/signup" component={Register} />
         <Route exact path="/reservations" component={Reservation} />
         <Route exact path="/logout" component={Logout} />
         <Route exact path="/teachers" component={HomeTeacher} />
         <Route exact path="/teachers/:id" component={TeachersDetails} />
+        <Route exact path="/" component={Signin} />
       </Switch>
     </main>
   </BrowserRouter>
