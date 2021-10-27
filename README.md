@@ -11,7 +11,7 @@ If you want to visit a backend of this application checkout this [Link](https://
 
 ## Live Demo
 
-Check the application live [Here](https://online-class-app.netlify.app/)
+Check the application live [Here](https://online-class-application.netlify.app)
 
 ## Available Commands
 
