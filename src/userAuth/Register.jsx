@@ -7,7 +7,7 @@ import { registerUserAsync } from '../redux/thunk/authThunk';
 import validationSchema from '../components/validation/userValidation';
 import SubmitBtn from '../common/SubmitButton';
 import InputForm from '../common/InputForm';
-import Navbar from '../containers/Navbar3';
+import Navbar from '../containers/Navbar2';
 
 const SignUp = (props) => {
   const { currentUser, history } = props;

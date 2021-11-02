@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { loginUserAsync } from '../redux/thunk/authThunk';
-import Navbar from '../containers/Navbar3';
+import Navbar from '../containers/Navbar2';
 
 const Signin = ({ loginUser, history, isAuthenticated }) => {
   useEffect(() => {

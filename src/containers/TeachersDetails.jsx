@@ -6,7 +6,6 @@ import { loginUserSuccess } from '../redux/actions/actionCreators';
 import { loadTeachersAsync } from '../redux/thunk/teachersThunk';
 import Teacher from '../components/Teacher';
 import Navbar from './Navbar1';
-import Footer from './Footer';
 
 const TeachersDetails = ({
   teachers, loadTeachers, match, history, loginUser,
@@ -30,7 +29,6 @@ const TeachersDetails = ({
     <>
       <Navbar />
       {teacher && <Teacher teacher={teacher} />}
-      <Footer />
     </>
   );
 };

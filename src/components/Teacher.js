@@ -43,7 +43,7 @@ const Teacher = ({
                 </Card.Text>
                 {res ? (
                   <Button
-                    className="button"
+                    className="button remove"
                     onClick={() => removeToReservations(res.id)}
                   >
                     REMOVE TO RESERVATION

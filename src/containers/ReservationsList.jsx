@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { loadReservationsAsync } from '../redux/thunk/reservationsThunk';
 import Teacher from '../components/Teacher';
 import Navbar from './Navbar1';
-import Footer from './Footer';
+import Nav from './Navbar2';
 
 const Reservation = ({
   history, loadReservations, teachers,
@@ -16,6 +16,7 @@ const Reservation = ({
   }, []);
   return (
     <>
+      <Nav />
       <Navbar />
       {teachers.length > 0 ? (
         <div>
@@ -26,7 +27,6 @@ const Reservation = ({
       ) : (
         'List is empty'
       )}
-      <Footer />
     </>
   );
 };
