@@ -2,10 +2,13 @@
 This is a frontend of online class reservation app, with this application you are able to 
 make reservations of a course with one or more teachers.
 
-### Teachers
-![screenshot](./teacher.png)
+### Teachers List
+![screenshot](./shot.png)
 
-## Backend Link
+### Reservations
+![screenshot](./res.png)
+
+### Backend Link
 
 If you want to visit a backend of this application checkout this [Link](https://github.com/DeliceLydia/online-class-reservation-apis)
 
