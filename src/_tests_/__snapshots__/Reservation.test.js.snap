@@ -6,49 +6,49 @@ Array [
     className=""
   >
     <div
-      className="flex navbar align"
+      className="nav-left"
     >
-      <div
-        className="nav-left"
+      <a
+        href="/"
+        onClick={[Function]}
       >
-        <a
-          href="/"
-          onClick={[Function]}
+        <span
+          className="logo"
         >
-          <span
-            className="logo"
-          >
-            0nlineCourses
-          </span>
-        </a>
-      </div>
-      <div
-        className="nav-right align"
+          0nlineCourses
+        </span>
+      </a>
+    </div>
+  </nav>,
+  <nav
+    className=""
+  >
+    <div
+      className="nav-right"
+    >
+      <a
+        className="nav signup"
+        href="/"
+        onClick={[Function]}
       >
-        <a
-          className="nav login"
-          href="/teachers"
-          onClick={[Function]}
-        >
-          Teachers
-        </a>
-        <a
-          className="nav signup"
-          href="/logout"
-          onClick={[Function]}
-        >
-          Logout
-        </a>
-      </div>
+        Home
+      </a>
+      <a
+        className="nav login"
+        href="/teachers"
+        onClick={[Function]}
+      >
+        Teachers
+      </a>
+      <a
+        className="nav login"
+        href="/logout"
+        onClick={[Function]}
+      >
+        Logout
+      </a>
     </div>
   </nav>,
   "List is empty",
-  <div
-    className="footer"
-  >
-    <p>
-      Online courses © 2021, Designed by Lydia Ingabire
-    </p>
-  </div>,
 ]
 `;
