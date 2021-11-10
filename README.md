@@ -80,4 +80,4 @@ Give a ⭐️ if you like
 
 ## Copyright
 
-&copy;2021 Lydia Ingabire, Software Developer
+&copy; Lydia Ingabire, 2021
