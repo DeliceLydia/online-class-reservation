@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# ONLINE-CLASS-RESERVATION
+This is a frontend of online class reservation app, with this application you are able to 
+make reservations of a course with one or more teachers.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Teachers List
+![screenshot](./shot.png)
 
-## Available Scripts
+### Reservations
+![screenshot](./res.png)
 
-In the project directory, you can run:
+### Backend Link
 
-### `npm start`
+If you want to visit a backend of this application checkout this [Link](https://github.com/DeliceLydia/online-class-reservation-apis)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live Demo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Check the application live [Here](https://online-class-application.netlify.app)
 
-### `npm test`
+## Available Commands
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install project dependencies |
+| `npm start` | Build project and open web server running project |
+| `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) 
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Clone this repo
+    ```
+    git clone https://github.com/DeliceLydia/online-class-reservation-frontend.git
+    ```
+* Navigate to online-class-reservation-frontend folder
+    ```
+    cd online-class-reservation-frontend
+    ```
+* On the terminal, while in the 'online-class-reservation-frontend' directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Run ``` git checkout feature-branch ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Run ``` git pull origin feature-branch ```
 
-### `npm run eject`
+* Run ``` npm install ``` to install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Start the server by running ``` npm start ```
+   
+* The server would usually start on port:3000
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- CSS
+- Javascript
+- React
+- Redux
+- Netlify
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
 
-## Learn More
+👤 **Delice Lydia**
+  - GitHub: [Delice Lydia](https://github.com/DeliceLydia)
+  - Twitter: [Delice](https://twitter.com/IngabireLydia3)
+  - LinkedIn: [Delice Lydia](https://www.linkedin.com/in/delice-lydia/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contribution
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Clone the repo using the above instructions
+- Create a new branch: `git checkout -b awesome branch`
+- Add your changes and commit the file
+- Push to your forked repo
+- Make a pull request to `develop` branch
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Credits goes to [Murat Korkmaz on Behance](https://www.behance.net/muratk) for giving us
+an inspiration from his [Design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign)
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like 
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](https://github.com/DeliceLydia/bookstore-cms/blob/main/LICENSE) licensed.
