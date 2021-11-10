@@ -78,6 +78,6 @@ an inspiration from his [Design](https://www.behance.net/gallery/26425031/Vespa-
 
 Give a ⭐️ if you like 
 
-## 📝 License
+## Copyright
 
-This project is [MIT](https://github.com/DeliceLydia/bookstore-cms/blob/main/LICENSE) licensed.
+Copyright, &copy 2021
