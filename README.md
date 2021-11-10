@@ -80,4 +80,4 @@ Give a ⭐️ if you like
 
 ## Copyright
 
-Copyright, &copy 2021
+Copyright, &copy;2021
